@@ -16,10 +16,18 @@ public class Book extends LibraryItem{
 
     ///////////////////////////Constructors//////////////////////////////////
 
-    public Book(String title, int edition) {
+    public Book(String title, int edition, String author) {
         super(title);
-    }
+        this.author = author;
+        this.edition = edition;
 
+    }
+    public Book(int index, int edition, String author) {
+        super(index);
+        this.author = author;
+        this.edition = edition;
+
+    }
 
 
 

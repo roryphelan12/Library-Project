@@ -10,14 +10,19 @@ public class DVD extends LibraryItem {
 
     ///////////////////////////Constructors//////////////////////////////////
 
-    public DVD(){}
 
-    public DVD(String director, int releaseYear, String title) {
+
+    public DVD(String director, int releaseYear, String title){
         super(title);
         this.director = director;
         this.releaseYear = releaseYear;
     }
 
+    public DVD(String director, int releaseYear, String title, int index){
+        super(index);
+        this.director = director;
+        this.releaseYear = releaseYear;
+    }
 
 
 

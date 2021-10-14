@@ -12,17 +12,17 @@ public class Comic extends LibraryItem {
     ///////////////////////////Constructors//////////////////////////////////
 
 
-    public Comic(String title) {
+    public Comic(String brand, String author, String title){
         super(title);
+        this.author = author;
+        this.brand = brand;
     }
 
-    public Comic(int index) {
+    public Comic(String brand, String author, int index){
         super(index);
+        this.author = author;
+        this.brand = brand;
     }
-
-
-
-
 
 
 
