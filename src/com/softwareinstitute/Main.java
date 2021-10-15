@@ -5,19 +5,23 @@ import java.util.ArrayList;
 public class Main {
 /////////////////////this is my library////////////////////////////////////////////
     public static void main(String[] args) {
-        ArrayList<LibraryItem> Items = new ArrayList<LibraryItem>();
-        LibraryItem Comic1 = new Comic("DC","john smith", "Superman");
-        LibraryItem DVD1 = new DVD("Christopher Nolan",2021, "Tennet");
-        LibraryItem Book1 = new Book("Lord of The Rings",1, "Christopher Tolkien");
+        // ArrayList<LibraryItem> Items = new ArrayList<LibraryItem>();
+       // LibraryItem Comic1 = new Comic("DC","john smith", "Superman");
+      //  LibraryItem DVD1 = new DVD("Christopher Nolan",2021, "Tennet");
+     //   LibraryItem Book1 = new Book("Lord of The Rings",1, "Christopher Tolkien");
+
+       Book Book1 =  new Book("Lord of The Rings",1, "Christopher Tolkien");
+        DVD DVD1 = new DVD("Christopher Nolan",2021, "Tennet");
+        Comic Comic1 = new Comic("DC","john smith", "Superman");
+        Comic Comic2 = new Comic("Spiderman","DC",1234232);
 
 
-        Items.add(Comic1);
-        Items.add(DVD1);
-        Items.add(Book1);
-
-        System.out.println(DVD1.getName());
+        System.out.println(DVD1.getReleaseYear());
         System.out.println(Comic1.getName());
-        System.out.println(Book1.getIndex());
+        System.out.println(Book1.getName());
+        System.out.println(Comic1.getBrand());
+
+
 
 
 

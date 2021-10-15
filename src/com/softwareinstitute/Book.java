@@ -1,6 +1,6 @@
 package com.softwareinstitute;
 
-public class Book extends LibraryItem{
+public class Book extends LibraryItem implements Borrowable{
 
 
 
@@ -33,12 +33,7 @@ public class Book extends LibraryItem{
 
 
     ///////////////////////////Methods//////////////////////////////////
-    public void title(String title){
-        System.out.println("The title is "+title);
-    }
-    public void index(int index){
-        System.out.println("The index is "+index);
-    }
+
 
     public int getEdition(){return edition;}
     public String getAuthor(){return author;}
@@ -46,4 +41,42 @@ public class Book extends LibraryItem{
     public void setEdition(int edition) {this.edition = edition;}
 
 
+    @Override
+    public void loanDuration() {
+
+    }
+
+    @Override
+    public void director(String directorName) {
+
+    }
+
+    @Override
+    public void author(String authorName) {
+
+    }
+
+    @Override
+    public void releaseYear(int year) {
+
+    }
+
+    @Override
+    public void getAuthor(String author) {
+
+    }
+
+    @Override
+    public void getEdition(int edition) {
+
+    }
+
+
+
+
+
+    @Override
+    public int getReleaseYear(int releaseYear) {
+        return 0;
+    }
 }

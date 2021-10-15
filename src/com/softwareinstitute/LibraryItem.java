@@ -20,11 +20,12 @@ public abstract class LibraryItem {
 
 
 
+
     ///////////////////////////Methods//////////////////////////////////
 
-   // public abstract void director(String directorName);
-   // public abstract void author(String authorName);
-  //  public abstract void releaseYear(int year);
+    public abstract void director(String directorName);
+    public abstract void author(String authorName);
+    public abstract void releaseYear(int year);
 
 
     public String getName() {
@@ -37,6 +38,10 @@ public abstract class LibraryItem {
         this.index = index;
     }
     public int getIndex() {return index;}
+
+    public abstract void getAuthor(String author);
+    public abstract void getEdition(int edition);
+    public abstract int getReleaseYear(int releaseYear);
 
 
 

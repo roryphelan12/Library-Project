@@ -1,7 +1,7 @@
 package com.softwareinstitute;
 
 
-public class Comic extends LibraryItem {
+public class Comic extends LibraryItem implements Borrowable {
     ///////////////////////////Attributes//////////////////////////////////
     private String brand;
     private String author;
@@ -10,6 +10,48 @@ public class Comic extends LibraryItem {
 
 
     ///////////////////////////Constructors//////////////////////////////////
+
+    public Comic(String title){
+        super(title);
+    }
+
+    public Comic(int index){
+        super(index);
+    }
+
+    @Override
+    public void director(String directorName) {
+
+    }
+
+    @Override
+    public void author(String authorName) {
+
+    }
+
+    @Override
+    public void releaseYear(int year) {
+
+    }
+
+    @Override
+    public void getAuthor(String author) {
+
+    }
+
+    @Override
+    public void getEdition(int edition) {
+
+    }
+
+
+
+
+
+    @Override
+    public int getReleaseYear(int releaseYear) {
+        return 0;
+    }
 
 
     public Comic(String brand, String author, String title){
@@ -27,15 +69,15 @@ public class Comic extends LibraryItem {
 
 
     ///////////////////////////Methods//////////////////////////////////
-    public void title(String title){
-        System.out.println("The title is "+title);
-    }
-    public void index(int index){
-        System.out.println("The index is "+index);
-    }
+
 
     public String getBrand(){return brand;}
     public String getAuthor(){return author;}
     public void setAuthor(String author){this.author = author;}
     public void setBrand(String brand) {this.brand = brand;}
+
+    @Override
+    public void loanDuration() {
+
+    }
 }
